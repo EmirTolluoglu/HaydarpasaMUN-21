@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+}
+
+#selam {
+    background-attachment: fixed;
+    background-position: center;
+}
+.parallax {
+  /* The image used */
+  background-image: url('img/nislu-zengin.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div id="buneolm" class="parallax"></div>
+<button id="selam" onclick="attachmentchanger()">selamlarr</button>
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+
+<script>
+    var aq = document.getElementById("buneolm").style;
+    function attachmentchanger() {
+        console.log(document.body.scrollHeight)
+        console.log(scrollY)
+        if (aq.backgroundAttachment == "local") {
+            aq.backgroundAttachment = "fixed";
+        }else{
+            aq.backgroundAttachment = "local";
+        }
+        
+    }
+
+</script>
+<div id="buneolm" class="parallax"></div>
+
+</body>
+</html>
+
