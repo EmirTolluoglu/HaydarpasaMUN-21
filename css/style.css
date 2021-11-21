@@ -66,7 +66,7 @@ h6 {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: 0.5s;
   z-index: 11;
 }
 
@@ -1645,7 +1645,6 @@ background-color: transparent;
 	background: #ccc;
 	border-radius: 50%;
 	text-align: center;
-	-webkit-transition: background-color 400ms linear, color 400ms linear;
 }
 
 #introduction .exit-btn p {
@@ -1710,12 +1709,6 @@ display: none;
 #container-img img {
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#container-img .filter-container {
-}
-
-#container-img .filter {
 }
 
 .merhaba {
@@ -2141,8 +2134,7 @@ width: 93%;
 }
 
 @media (max-width: 500px) {
-	#faq {
-	}
+
 }
 
 #faq .logo-container {
@@ -2276,8 +2268,8 @@ width: 93%;
 }
 
 @media (max-width: 500px) {
-	#prev18 {
-	}
+
+
 }
 
 #prev18 .barrier {
@@ -2957,9 +2949,6 @@ form:hover .fa{
 /* Accomodation Section
 --------------------------------*/
 
-#accomodation {
-}
-
 #accomodation .acco {
 	position: absolute;
 	font-size: 40px;
@@ -2968,7 +2957,6 @@ form:hover .fa{
 	width: 100%;
 	height: 90px;
 	color: #000;
-	/*background: linear-gradient(90deg, #000000 0%, #ccc 51.56%, #000000 100%), #FFFFFF;*/
 	background-size: cover;
 	left: 0px;
 	top: 2150px;
@@ -3331,9 +3319,7 @@ background-size: cover;
 	display: inline-block;
 }
 */
-#payment {
 
-}
 #payment .card {
 	border-radius: 30px;
 	text-align: center;
@@ -4584,7 +4570,7 @@ background-size: cover;
   background: rgb(245, 245, 245);
   color: rgb(0, 0, 0);
   cursor: pointer;
-  padding: 15px;
+  padding: 20px;
   width: 75%;
   height: 60px;
   border: none;
@@ -4601,8 +4587,8 @@ background-size: cover;
 }
 
 #team .nextpage {
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	display: inline;
 	position: absolute;
 	margin-right: 0px;
@@ -4812,6 +4798,9 @@ background-size: cover;
   background-color: rgba(255,255,255,0.8);
   top: 300px;
   overflow: hidden;
+  text-align: center;
+  padding-left: 175x;
+  padding-right: 175x;
 }
 
 @media (max-width: 500px) {
