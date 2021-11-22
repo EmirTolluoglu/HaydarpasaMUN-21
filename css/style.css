@@ -2589,9 +2589,6 @@ width: 93%;
 --------------------------------*/
 
 #conference {
-	width: 0px;
-	height: 5000px;
-	text-align: center;
 }
 
 #conference .conf {
@@ -2765,17 +2762,21 @@ background: #fff;
 /* Transportation Section
 --------------------------------*/
 
+#transportation {
+	text-align: left;
+	margin: 0 250px;
+	padding: 50px;
+	width: auto;
+}
+
 #transportation .trans {
 	font-size: 40px;
 	color: #000;
-	position: absolute;
 	font-size: 40px;
-	padding-top: 25px;
-	text-align: center;
 	background-size: cover;
-	left: 100px;
-	top: 1180px;
 	z-index: 10;
+	display: inline;
+	float: right;
 }
 
 @media (max-width: 500px) {
@@ -2806,103 +2807,6 @@ background: #fff;
 }
 }
 
-/*SearchStick
-
-
-.search {
-	margin-top: 12px;
-	display: block;
-}
-
-.search2 {
-	margin-top: 12px;
-	display: none;
-}
-
-@media (max-width: 750px) {
-	.search {
-	  display: none;
-    }
-	
-	.search2 {
-	  display: block;
-    }
-}
-
-.test-search {
-	height: 25px;
-	display: none;
-}
-
-@media(max-width:750px) {
-	.test-search {
-	  display: block;
-}
-}
-
-form{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px;
-}
-
-input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-}
-
-.fa{
-	margin-left: 10px;
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: #07051a;
-    text-align: center;
-    font-size: 1.2em;
-    transition: all 1s;
-}
-
-form:hover{
-    width: 200px;
-    cursor: pointer;
-}
-
-form:hover input{
-    display: block;
-}
-
-form:hover .fa{
-    background: #07051a;
-    color: white;
-}
-
-/*-----
-*/
-
 #transportation .text {
 	position: absolute;
 	width: 1290px;
@@ -2914,17 +2818,13 @@ form:hover .fa{
 	text-align: justify;
 }
 
-#transportation .test1 {
-	position: absolute;
-	width: 325px;
+
+
+
+#transportation .trans-text {
 	color: #000;
-	font-size: 14px;
-	top: 0px;
-	margin-top: 150px;
-	left: -60px;
-	text-align: left;
-	text-shadow: 0px 0px 0px #000;
-	display: none;
+	font-size: 15px;
+	margin:  0 10%;
 }
 
 @media (max-width: 500px) {
@@ -2985,8 +2885,9 @@ form:hover .fa{
 }
 
 #accomodation .embeds {
-margin-top: 50px;
-display: inline-block;
+	margin-top: 50px;
+	display: inline;
+	float: left;
 }
 
 @media (max-width: 750px) { 
