@@ -2761,13 +2761,58 @@ background: #fff;
 
 /* Transportation Section
 --------------------------------*/
-
 #transportation {
-	text-align: left;
-	margin: 0 250px;
+	background: white;
+}
+
+#transportation .main-container{
+
 	padding: 50px;
 	width: auto;
+	margin: 0 250px;
+	height: 864px;
+
 }
+
+#transportation .trans-text {
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 50px;
+	text-align: left;
+	color: #000;
+}
+
+#transportation .api-container {
+	padding: 20px;
+	display: inline;
+	float: left;
+	width: 35%;
+	height: 100%;
+}
+
+#transportation .trans-container {
+	padding: 20px;
+
+	display: inline;
+	float: right;
+	width: 65%;
+	height: 100%;
+}
+
+#transportation .ven{
+	text-align: center;
+	font-size: 40px;
+	color: #000;
+	font-size: 40px;
+	background-size: cover;
+	text-align: center;
+}
+
+#transportation .hlapi {
+	margin-top: 20px;
+    display: inline;
+}
+
 
 #transportation .trans {
 	font-size: 40px;
@@ -2775,8 +2820,7 @@ background: #fff;
 	font-size: 40px;
 	background-size: cover;
 	z-index: 10;
-	display: inline;
-	float: right;
+	text-align: center;
 }
 
 @media (max-width: 500px) {
@@ -2818,15 +2862,6 @@ background: #fff;
 	text-align: justify;
 }
 
-
-
-
-#transportation .trans-text {
-	color: #000;
-	font-size: 15px;
-	margin:  0 10%;
-}
-
 @media (max-width: 500px) {
 	#transportation .text {
 		display: none;
@@ -2848,6 +2883,20 @@ background: #fff;
 
 /* Accomodation Section
 --------------------------------*/
+
+#accomodation .main-container {
+	padding: 50px;
+	width: auto;
+	margin: 0 250px;
+	height: 864px;
+	text-align: center;
+}
+
+#accomodation .child-container{
+	display: inline;
+	float: left;
+	
+}
 
 #accomodation .acco {
 	position: absolute;
