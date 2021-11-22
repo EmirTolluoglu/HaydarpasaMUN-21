@@ -4692,6 +4692,8 @@ background-size: cover;
 }
 
 #team .panel {
+	margin-left: 10%;
+	margin-right: 11%;
   font-size: 20px;
   padding: 0 40px;
   display: none;
@@ -4699,7 +4701,7 @@ background-size: cover;
   background-color: rgba(255,255,255,0.8);
   top: 300px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   padding-left: 175x;
   padding-right: 175x;
 }
