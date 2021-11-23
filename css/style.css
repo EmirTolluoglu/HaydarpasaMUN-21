@@ -3077,13 +3077,15 @@ background-size: cover;
 /* Schedule Section
 --------------------------------*/
 
-#schedule .scheck {
+#conference .scheck {
 	position: absolute;
 	font-size: 40px;
 	color: #000;
 	left: 50px;
 	top: 3650px;
 	z-index: 40;
+	margin-top: 40px;
+	margin-left: 40px;
 }
 
 #conference .something {
@@ -3099,7 +3101,6 @@ background-size: cover;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-	position: absolute;
 	width: 65%;
 	background-color: #930000;
 	top: 3750px;
