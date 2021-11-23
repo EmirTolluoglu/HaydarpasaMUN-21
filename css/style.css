@@ -3292,6 +3292,30 @@ background-size: cover;
 }
 */
 
+#payment {
+	margin: 75px 0;
+
+}
+
+ #payment .container-title {
+	 text-align: center;
+	 font-size: 25px;
+ }
+
+#payment .delege-container {
+	display: inline;
+	height: 100%;
+	width: auto; 
+}
+
+#payment .pay-container {
+	padding: 20px;
+	margin-top: 200px;
+	height: 200px;
+	margin: 0 250px;
+	width: auto;
+}
+
 #payment .card {
 	border-radius: 30px;
 	text-align: center;
@@ -3311,6 +3335,13 @@ background-size: cover;
 	padding: 17px;
 }
 
+
+#payment .fee-text{
+	text-align: center;
+	font-size: 20px;
+	border: #000000;
+	border-radius: 10px;
+}
 
 #payment .fee-types{
 	height: 60px;
