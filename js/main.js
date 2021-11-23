@@ -10,71 +10,72 @@
     }
   });
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  
+  // left: 37, up: 38, right: 39, down: 40,
+  // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+  var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
+  function preventDefault(e) {
+    e = e || window.event;
+    if (e.preventDefault)
       e.preventDefault();
-  e.returnValue = false;  
-}
+    e.returnValue = false;
+  }
 
-function preventDefaultForScrollKeys(e) {
+  function preventDefaultForScrollKeys(e) {
     if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
+      preventDefault(e);
+      return false;
     }
-}
+  }
 
-function disableScroll() {
-  if (window.addEventListener) // older FF
+  function disableScroll() {
+    if (window.addEventListener) // older FF
       window.addEventListener('DOMMouseScroll', preventDefault, false);
-  document.addEventListener('wheel', preventDefault, {passive: false}); // Disable scrolling in Chrome
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
-}
+    document.addEventListener('wheel', preventDefault, { passive: false }); // Disable scrolling in Chrome
+    window.onwheel = preventDefault; // modern standard
+    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+    window.ontouchmove = preventDefault; // mobile
+    document.onkeydown = preventDefaultForScrollKeys;
+  }
 
-function enableScroll() {
+  function enableScroll() {
     if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    document.removeEventListener('wheel', preventDefault, {passive: false}); // Enable scrolling in Chrome
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
-}
-// document.onmousemove = function(e) {
-// 					  document.GetElementById("card").style.transform = "rotateY("+ e.clientX + "deg)";
-// 					}
+      window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    document.removeEventListener('wheel', preventDefault, { passive: false }); // Enable scrolling in Chrome
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
+  }
+  // document.onmousemove = function(e) {
+  // 					  document.GetElementById("card").style.transform = "rotateY("+ e.clientX + "deg)";
+  // 					}
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+  $('.back-to-top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
     return false;
   });
 
@@ -103,19 +104,19 @@ function enableScroll() {
     $('body').append('<div id="mobile-body-overly"></div>');
     $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
 
-    $(document).on('click', '.menu-has-children i', function(e) {
+    $(document).on('click', '.menu-has-children i', function (e) {
       $(this).next().toggleClass('menu-item-active');
       $(this).nextAll('ul').eq(0).slideToggle();
       $(this).toggleClass("fa-chevron-up fa-chevron-down");
     });
 
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
+    $(document).on('click', '#mobile-nav-toggle', function (e) {
       $('body').toggleClass('mobile-nav-active');
       $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
       $('#mobile-body-overly').toggle();
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
@@ -131,7 +132,7 @@ function enableScroll() {
 
 
   // Header scroll class
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
     } else {
@@ -144,7 +145,7 @@ function enableScroll() {
   }
 
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -153,7 +154,7 @@ function enableScroll() {
         if ($('#header').length) {
           top_space = $('#header').outerHeight();
 
-          if (! $('#header').hasClass('header-scrolled')) {
+          if (!$('#header').hasClass('header-scrolled')) {
             top_space = top_space - 20;
           }
         }
@@ -184,14 +185,14 @@ function enableScroll() {
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
-  
-    nav_sections.each(function() {
+
+    nav_sections.each(function () {
       var top = $(this).offset().top - main_nav_height,
-          bottom = top + $(this).outerHeight();
-  
+        bottom = top + $(this).outerHeight();
+
       if (cur_pos >= top && cur_pos <= bottom) {
         main_nav.find('li').removeClass('menu-active menu-item-active');
-        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('menu-active menu-item-active');
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('menu-active menu-item-active');
       }
     });
   });
@@ -199,29 +200,29 @@ function enableScroll() {
   // Intro carousel
   var introCarousel = $(".carousel");
   var introCarouselIndicators = $(".carousel-indicators");
-  introCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
+  introCarousel.find(".carousel-inner").children(".carousel-item").each(function (index) {
     (index === 0) ?
-    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
-    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
+      introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
+      introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
 
-    $(this).css("background-image", "url('" + $(this).children('.carousel-background').children('img').attr('src') +"')");
+    $(this).css("background-image", "url('" + $(this).children('.carousel-background').children('img').attr('src') + "')");
     $(this).children('.carousel-background').remove();
   });
 
   $(".carousel").swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
       if (direction == 'left') $(this).carousel('next');
       if (direction == 'right') $(this).carousel('prev');
     },
-    allowPageScroll:"vertical"
+    allowPageScroll: "vertical"
   });
 
   // Skills section
-  $('#skills').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
+  $('#skills').waypoint(function () {
+    $('.progress .progress-bar').each(function () {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
-  }, { offset: '80%'} );
+  }, { offset: '80%' });
 
   // jQuery counterUp (used in Facts section)
   $('[data-toggle="counter-up"]').counterUp({
@@ -235,7 +236,7 @@ function enableScroll() {
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
+  $('#portfolio-flters li').on('click', function () {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
@@ -247,7 +248,8 @@ function enableScroll() {
     autoplay: true,
     dots: true,
     loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
+    responsive: {
+      0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
     }
   });
 
@@ -260,19 +262,19 @@ function enableScroll() {
   });
 
 })(jQuery);
-$(".menu").click(function() {
+$(".menu").click(function () {
   $(".menu").toggleClass("active");
   $(".navbar-menu").toggleClass("active");
 });
 
-$(function() {
+$(function () {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
-    submitError: function($form, event, errors) {
+    submitError: function ($form, event, errors) {
       // additional error messages or events
     },
-    submitSuccess: function($form, event) {
+    submitSuccess: function ($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
       var name = $("input#name").val();
@@ -296,7 +298,7 @@ $(function() {
           message: message
         },
         cache: false,
-        success: function() {
+        success: function () {
           // Success message
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -308,7 +310,7 @@ $(function() {
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        error: function() {
+        error: function () {
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -318,25 +320,25 @@ $(function() {
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        complete: function() {
-          setTimeout(function() {
+        complete: function () {
+          setTimeout(function () {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
           }, 1000);
         }
       });
     },
-    filter: function() {
+    filter: function () {
       return $(this).is(":visible");
     },
   });
 
-  $("a[data-toggle=\"tab\"]").click(function(e) {
+  $("a[data-toggle=\"tab\"]").click(function (e) {
     e.preventDefault();
     $(this).tab("show");
   });
 });
 
 /*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
+$('#name').focus(function () {
   $('#success').html('');
 });

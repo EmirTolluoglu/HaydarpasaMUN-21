@@ -4564,40 +4564,40 @@ background-size: cover;
 #team {
   background: #fff;
   padding: 60px 0;
+  margin: 0 10%;
 }
 
 #team .accordion {
-	display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: rgb(245, 245, 245);
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  padding: 20px;
-  width: 75%;
-  height: 60px;
-  border: none;
-  text-align: left;
-  font-size: 20px;
-  transition: 0.4s;
-  margin: 20px auto;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.08);
+	background: rgb(245, 245, 245);
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	padding: 20px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+	box-shadow: 5px 5px rgb(219, 219, 219);
+	margin: 10px 0;
 }
 
-#team .ssstext {
-	position: absolute;
-	display: inline;
+#team .active, #team .accordion:hover {
+	background-color: #ccc;
 }
 
-#team .nextpage {
-	height: 20px;
-	width: 20px;
-	display: inline;
-	position: absolute;
-	margin-right: 0px;
-	margin: 0px auto 0px  1200px;
-}
+.accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2212";
+  }
+  
 
 @media (max-width: 500px) {
 	#team .accordion {
@@ -4795,19 +4795,13 @@ background-size: cover;
 }
 
 #team .panel {
-	margin-left: 10%;
-	margin-right: 11%;
-  font-size: 20px;
-  padding: 0 40px;
-  display: none;
-  color: #000;
-  background-color: rgba(255,255,255,0.8);
-  top: 300px;
-  overflow: hidden;
-  text-align: left;
-  padding-left: 175x;
-  padding-right: 175x;
-}
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	font-size: 18px;
+  }
 
 @media (max-width: 500px) {
 	#team .panel {
