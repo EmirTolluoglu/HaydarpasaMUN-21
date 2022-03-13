@@ -60,7 +60,7 @@ h6 {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: 0.5s;
   z-index: 11;
 }
 
@@ -95,8 +95,6 @@ h6 {
 	margin-left: 25px;
 	margin-top: 16px;
 }
-
-background: linear-gradient(270deg, #000000 45.83%, rgba(0, 0, 0, 0.355412) 99.96%, rgba(0, 0, 0, 0) 99.97%, rgba(63, 63, 63, 0.68011) 99.98%, rgba(108, 108, 108, 0.451112) 99.99%);
 
 .something{
 
@@ -201,7 +199,7 @@ color: #FFFFFF;
 
 .menu-listing li a:hover { background-color: #262626;color: #fff;transition: 0.5s; }
 
-[18:22, 05.09.2019] Mehmet Emre: .menu {
+ .menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -1605,7 +1603,6 @@ height: 500px;
 	background: #ccc;
 	border-radius: 50%;
 	text-align: center;
-	-webkit-transition: background-color 400ms linear, color 400ms linear;
 }
 
 #introduction .exit-btn p {
@@ -1670,12 +1667,6 @@ display: none;
 #container-img img {
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#container-img .filter-container {
-}
-
-#container-img .filter {
 }
 
 #acommittees .guide-container {
@@ -2234,10 +2225,6 @@ width: 93%;
 	background-color: #fff;
 }
 
-@media (max-width: 500px) {
-	#prev18 {
-	}
-}
 
 #prev18 .barrier {
 	  display: -webkit-box;
@@ -2555,13 +2542,11 @@ width: 93%;
 /* conference Section
 --------------------------------*/
 
-#conference {
-	width: 0px;
-	height: 5000px;
-	text-align: center;
+#conference .map-container{
+	padding: 20px;
 }
 
-#conference .conf {
+#3 .conf {
 	font-size: 45px;
 	position: relative;
 	margin-top: 92px;
@@ -2916,8 +2901,6 @@ form:hover .fa{
 /* Accomodation Section
 --------------------------------*/
 
-#accomodation {
-}
 
 #accomodation .acco {
 	position: absolute;
@@ -4853,18 +4836,13 @@ background-size: cover;
   padding: 60px 0;
 }
 
-
- .imgicj {
-}
-
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
 }
 
 #contact .container {
-	background-image: url(..'/img/contact-foto.jpg');
-	background
+	background-image: url('../img/contact-foto.jpeg');
 }
 
 #contact .contact-info i {
