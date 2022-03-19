@@ -683,35 +683,6 @@ color: #FFFFFF;
 }
 }
 
-#card {
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	transform-style: preserve-3d;
-	transform: perspective(450px);
-	top: -175px;
-	left: 50%;
-	margin-left: -100px;
-}
-
-#card .front,
-#card .back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-}
-
-#card .front {
-	background: url('../img/new-logo.png');
-	background-size: cover;
-}
-
-#card .front {
-	background: url('../img/HAYDARPASA-MUN-LOGO.png');
-	background-size: cover;
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -979,7 +950,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-weight: 700;
   position: relative;
-  padding-top: 160px;
   padding-bottom: 15px;
 }
 
@@ -1088,7 +1058,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .container {
   position: relative;
   z-index: 10;
-  margin-top: -185px;
 }
 
 #about .about-col {
@@ -1460,49 +1429,49 @@ height: 500px;
 }
 
 .img1 {
-	background-image: url("../img/committies_photos/SOCHUM.jpg");
+	background-image: url("../img/committies-photos/SOCHUM.jpg");
 }
 
 .img2 {
-	background-image: url("../img/committies_photos/LEGAL.jpg");
+	background-image: url("../img/committies-photos/LEGAL.jpg");
 }
 
 .img3 {
-	background-image: url("../img/committies_photos/SPECPOL.jpg");
+	background-image: url("../img/committies-photos/SPECPOL.jpg");
 }
 
 .img4 {
-	background-image: url("../img/committies_photos/İnternational_Olympic.jpg");
+	background-image: url("../img/committies-photos/İnternational_Olympic.jpg");
 }
 
 .img5 {
-	background-image: url("../img/committies_photos/UNHCR.jpg");
+	background-image: url("../img/committies-photos/UNHCR.jpg");
 }
 
 .img6 {
-	background-image: url("../img/committies_photos/UNCTAD.webp");
+	background-image: url("../img/committies-photos/UNCTAD.webp");
 }
 
 .img7 {
-	background-image: url("../img/committies_photos/UN-Security-Council.jpg");
+	background-image: url("../img/committies-photos/UN-Security-Council.jpg");
 }
 
 .img8 {
-	background-image: url("..//img/committies_photos/NATO.jpg");
+	background-image: url("..//img/committies-photos/NATO.jpg");
 }
 
 .img9 {
-	background-image: url("..//img/committies_photos/Galatic_Senate.webp");
+	background-image: url("..//img/committies-photos/Galatic_Senate.webp");
 }
 
 .img10 {
-	background-image: url("../img/committies_photos/Mehmet_1.jpg");
+	background-image: url("../img/committies-photos/Mehmet_1.jpg");
 }
 .img11 {
-	background-image: url("../img/committies_photos/JCC.jpg");
+	background-image: url("../img/committies-photos/JCC.jpg");
 }
 .img12 {
-	background-image: url("../img/committies_photos/Court.jpg");
+	background-image: url("../img/committies-photos/Court.jpg");
 }
 
 #hidingScrollBar{
@@ -2714,50 +2683,6 @@ z-index: 5;
 background: #fff;
 }
 
-/* Transportation Section
---------------------------------*/
-
-#transportation .trans {
-	font-size: 40px;
-	color: #000;
-	position: absolute;
-	font-size: 40px;
-	padding-top: 25px;
-	text-align: center;
-	background-size: cover;
-	left: 100px;
-	top: 1180px;
-	z-index: 10;
-}
-
-@media (max-width: 500px) {
-	#transportation .trans {
-		font-size: 25px;
-		left: 80px;
-		top: 1200px;
-	}
-}
-
-#transportation .shuttles {
-	position: absolute;
-	font-size: 20px;
-	top: 2200px;
-	color: #000;
-	z-index: 1500;
-	width: 650px;
-	display: inline-block;
-	margin-left: -100px;
-}
-
-@media(max-width:750px) {
-	#transportation .shuttles {
-		font-size: 18px;
-		top: 2150px;
-		width: 350px;
-		left: 25px;
-}
-}
-
 /*SearchStick
 
 
@@ -2854,49 +2779,6 @@ form:hover .fa{
 
 /*-----
 */
-
-#transportation .text {
-	position: absolute;
-	width: 1290px;
-	left: -50px;
-	top: 200px;
-	font-size: 22px;
-	text-shadow: 0px 0px 0px #000;
-	color: #000;
-	text-align: justify;
-}
-
-#transportation .test1 {
-	position: absolute;
-	width: 325px;
-	color: #000;
-	font-size: 14px;
-	top: 0px;
-	margin-top: 150px;
-	left: -60px;
-	text-align: left;
-	text-shadow: 0px 0px 0px #000;
-	display: none;
-}
-
-@media (max-width: 500px) {
-	#transportation .text {
-		display: none;
-	}
-	#transportation .test1 {
-		display: block;
-	}
-}
-
-@media (max-width: 380px) {
-	#transportation .test1 {
-		top: -50px;
-		left: -70px;
-		width: 295px;
-	}
-}
-
-
 
 /* Accomodation Section
 --------------------------------*/
@@ -3017,13 +2899,6 @@ top: 200px;
 	top: 0px;
 	z-index: 20;
 }
-
-#transportation1 {
-	position: absolute;
-	top: 1200px;
-	z-index: 20;
-}
-
 #accomodation1 {
 	position: absolute;
 	top: 2150px;
