@@ -4623,7 +4623,6 @@ background-size: cover;
 @media (max-width: 600px) {
 	#new-trick .secr {
 		font-size: 25px;
-		width: 200px;
 		left: -150px;
 	}
 }
