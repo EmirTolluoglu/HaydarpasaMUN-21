@@ -1449,7 +1449,7 @@ height: 500px;
 }
 
 .img6 {
-	background-image: url("../img/committies-photos/UNCTAD.webp");
+	background-image: url("../img/committies-photos/UNCTAD.jpg");
 }
 
 .img7 {
@@ -1461,7 +1461,7 @@ height: 500px;
 }
 
 .img9 {
-	background-image: url("..//img/committies-photos/Galatic_Senate.webp");
+	background-image: url("..//img/committies-photos/Galatic_Senate.jpg");
 }
 
 .img10 {
@@ -3954,7 +3954,7 @@ background-size: cover;
     height: 400px;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url('../img/image1.jpeg');
+	background-image: url('../img/image1.jpg');
 }
 
 .icjfoto {
@@ -4713,10 +4713,6 @@ background-size: cover;
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
-}
-
-#contact .container {
-	background-image: url('../img/contact-foto.jpeg');
 }
 
 #contact .contact-info i {
