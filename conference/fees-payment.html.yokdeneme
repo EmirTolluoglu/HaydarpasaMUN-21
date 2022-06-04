@@ -15,10 +15,11 @@
         gtag('config', 'GA_MEASUREMENT_ID');
     </script>
     <meta charset="utf-8">
-    <title>Previous Editions | About Us | HAYDARPAŞAMUN'20</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="keywords" content="HaydarpaşaMUN'20">
-    <meta name="description" content="The official site of Haydarpaşa Model United Nations 2020. Haydarpaşa International Model United Nations 2020 website is programmed and designed by the I.T. Department.">
+    <title>Fees&Payment | HAYDARPAŞAMUN'22</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HaydarpaşaMUN'22">
+    <meta name="description" content="The official site of Haydarpaşa Model United Nations 2022. Haydarpaşa International Model United Nations 2022 website is programmed and designed by the I.T. Department.">
+
     <!-- Favicons -->
     <link href="/img/HaydarpasaLogo.jpg" height="80" width="80" rel="icon">
     <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -108,57 +109,82 @@
             </nav>
         </div>
     </header>
-    <nav id="prev18">
-        <div class="barrier">
-            <div class="preved"><strong>HAYDARPAŞAMUN'22</strong></div>
-        </div>
+
+    <nav id="new-trick">
+        <div class="barrier"></div>
+        <div class="secr"><strong>Fees & Payment</strong></div>
     </nav>
 
-    <section id="prev-content">
-        <img class="hpal18" src="/img/members/hpalmun20.jpg" width="1058" alt="hpalmun18">
-        <div class="team"><strong>HAYDARPAŞAMUN'22 Team</strong></div>
-        <div class="aca">
-            <p class="acad">Academic Team</p>
-            <ul class="academic">
-                <li><strong>Secretary General:</strong> Zeynep Naz Coşkun<br></li>
-                <li><strong>Deputy Secretary General:</strong> Zeynep İrem Güner<br></li>
-                <li><strong>Head of Crisis:</strong> Taylan Tunay<br></li>
-                <li><strong>Deputy Head of Crisis:</strong> Bilge Konuksay<br></li>
+    <section id="payment">
+        <div class="coll">
+            <p class="padawan"><strong>Individual Delegate:<span>&nbsp;&nbsp;</span></strong></p>
+            <p class="spec"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 420₺ <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 440₺</p>
+            <div class="col1"></div>
+            <div class="col2"></div>
 
+            <div class="txt1">Late</div>
+            <div class="txt2">Regular</div>
+
+        </div>
+        <div class="empty"></div>
+        <div class="coll">
+            <p class="padawan"><strong>Delegation:<span>&nbsp;&nbsp;</span></strong></p>
+            <p class="spec"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 400₺ <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 420₺</p>
+            <div class="col1"></div>
+            <div class="col2"></div>
+
+            <div class="txt1">Late</div>
+            <div class="txt2">Regular</div>
+
+        </div>
+        <div class="empty"></div>
+        <div class="coll">
+            <p class="padawan"><strong>Committee Director:<span>&nbsp;&nbsp;</span></strong></p>
+            <p class="spec"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 150₺ <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+            <div class="col2"></div>
+
+            <div class="txt2">Regular</div>
+
+        </div>
+        <div class="empty"></div>
+        <div class="coll">
+            <p class="padawan"><strong>Press Member:<span>&nbsp;&nbsp;</span></strong></p>
+            <p class="spec"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 200₺ <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+            <div class="col2"></div>
+
+
+            <div class="txt2">Regular</div>
+
+        </div>
+        <div class="empty"></div>
+    </section>
+
+
+
+    <section id="paym">
+        <div class="container">
+            <p class="text"><strong>Your payment will include:</strong></p>
+            <ul class="ul-cont">
+                <li>All materials and tools (pen, message papers, notebooks etc.)<br></li>
+                <li>Badges<br></li>
+                <li>Lunch for four days<br></li>
+                <li>Appetizers and drinks in coffee breaks</li>
             </ul>
         </div>
-        <div class="orga">
-            <p class="orgad">Organization Team</p>
-            <ul class="organization">
-                <li><strong>Director General:</strong> Elif Süeda Ekinci<br></li>
-                <li><strong>Deputy Director General:</strong> Rana Ece Alper<br></li>
-                <li><strong>Deputy Director General:</strong> İrem Saygı<br></li>
-                <li><strong>Head of I.T.:</strong> Mehmet Emre Çonkar<br></li>
-                <li><strong>Head of Logistics:</strong> Nilsu Zengin<br></li>
-                <li><strong>Deputy Head of Logistics:</strong> Batuhan Yavuz<br></li>
-                <li><strong>Head of P.R.:</strong> Yenican Koçtürk<br></li>
-                <li><strong>Deputy Head of P.R.:</strong> Eftelya Kaptan<br></li>
-                <li><strong>Head of Press:</strong> İrem Kanber<br></li>
-                <li><strong>Head of Administrative Staff:</strong> Gülhan Cangöz<br></li>
-                <li><strong>Deputy Head of Administrative Staff:</strong> Zeynep Şenol<br></li>
-            </ul>
-        </div>
-        <div class="committee">
-            <p class="committeed">The fourth session of Haydarpaşa MUN was held between 28-31 January 2022 in Haydarpaşa High School. The executive team<br>consisted of; Secretary General Zeynep Naz Coşkun, Deputy Secretary Generals Zeynep İrem Güner,
-                <br>Director General Elif Süeda Ekinci and Deputy Director Generals İrem Saygı and Rana Ece Alper. Total number of 450 delegates<br>attended 10 committees which were:</p>
-            <ul class="kom">
-                <li>United Nations Office for the Coordination of Humanitarian Affairs</li>
-                <li>International Labour Organization<br></li>
-                <li>The United Nations Conference on Sustainable Development<br></li>
-                <li>World Trade Organization<br></li>
-                <li>The United Nations Educational, Scientific and Cultural Organization<br></li>
-                <li>Security Council<br></li>
-                <li>Joint Crisis Committee<br></li>
-                <li>Historical Advisory Panel<br></li>
-                <li>Alexander the Great's Cabinet<br></li>
-                <li>International Court of Justice<br></li>
-            </ul>
-        </div>
+    </section>
+
+    <section id="deadline">
+        <div class="dead"><strong>Deadlines</strong></div>
+        <div class="guide-container">
+            <div class="guide"><strong>Regular Period</strong>
+                <div class="line"></div>
+                <p class="padawan">03.03.2022 / 02.05.2022</p>
+            </div>
+            <div class="guide"><strong>Late Period</strong>
+                <div class="line"></div>
+                <p class="padawan">02.05.2022 / 29.05.2022</p>
+            </div>
+            <h2 style="text-align: center; font-size: 20px;">Further Campaigns are to be announced via our Instagram account @haydarpasamun</h2>
     </section>
 
     <footer id="footer">
@@ -169,12 +195,7 @@
                 Haydarpaşa International Model United Nations 2022 website is programmed and designed by the <strong>I.T. Department</strong>.
             </div>
             <div class="credits">
-                <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
-        -->
+
                 Contact us via <a class="mail" href="mailto:sg@haydarpasamun.org">sg@haydarpasamun.org</a><span>&nbsp;&nbsp;</span><a class="mail" href="mailto:dg@haydarpasamun.org">dg@haydarpasamun.org</a>.
             </div>
             <div class="col">
